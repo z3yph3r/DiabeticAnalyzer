@@ -3,5 +3,4 @@ djangorestframework
 scikit-learn
 numpy
 pandas
-sklearn
 gunicorn
