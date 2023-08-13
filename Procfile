@@ -1,3 +1,3 @@
 web: gunicorn DiabeticAnalyser.wsgi
 
-release: ./build_files.sh
+release: /build_files.sh
