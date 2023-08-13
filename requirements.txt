@@ -1,6 +1,4 @@
 Django
-djangorestframework
 scikit-learn
 numpy
 pandas
-gunicorn
