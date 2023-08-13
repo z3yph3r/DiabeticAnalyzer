@@ -1,0 +1,1 @@
+disclaimer=" While the pretrained models used on this platform have been trained on extensive medical data, no model is infallible. The assessment results are based on statistical probabilities and patterns in the data, and there may be instances where the predictions do not accurately reflect your actual health status."

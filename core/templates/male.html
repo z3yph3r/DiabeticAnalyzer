@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'male.css'%} ">
+    <title>Diabetic Analyser</title>
+    <meta name="description" content="Diabetes Checker with Pretrained Datasets : Your Personalized Health Assessment Platform">
+    <meta name="keywords" content="Diabetes Analyzer, riz4d, riz4d/DiabeticAnalyzer, djangoprojects, datascienceproject, mohamed rizad, bdiabetes test, machine learning, Mohamed Rizad, rizad">
+    <meta name="author" content="Mohamed Rizad">
+    <meta name="robots" content="index">
+    <meta property="og:title" content="Diabetic Analyzer">
+    <meta property="og:description" content="Diabetes Checker with Pretrained Datasets : Your Personalized Health Assessment Platform">
+    <meta property="og:url" content="https://github.com/riz4d/DiabeticAnalyzer">
+    <meta property="og:type" content="website">
+    <meta name="instagram:creator" content="riz.4d">
+    <meta name="github:creator" content="riz4d">
+</head>
+<body>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-9 col-xl-7">
+              <div class="card rounded-3">
+                <div class="card-body p-4">
+      
+                  <h4 class="text-center my-3 pb-3 headerdat">Patient Details</h4>
+                  <form action="" method="post">
+                    {% csrf_token %}
+                  <div class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                    <div class="col-12">
+                        <div class="form-outline">
+                            <label class="form-label" for="form1">Enter Your Name</label>
+                            <input required type="text" id="Patient_name" name="Patient_name" class="form-control"/>
+                        </div>
+                        <div class="form-outline">
+                            <label class="form-label" for="form1">Enter Your Age</label>
+                            <input required type="number" id="age" class="form-control" name="age"/>
+                        </div>
+                      <div class="form-outline">
+                        <label class="form-label" for="form1">Enter Glucose Level</label>
+                        <input required type="number" id="glucose" class="form-control" name="glucose"/>
+                      </div>
+                      <div class="form-outline">
+                        <label required class="form-label" for="form1">Enter BloodPressure Level</label>
+                        <input type="number" id="bloodpressure" class="form-control" name="bloodpressure"/>
+                      </div>
+                      <div class="form-outline">
+                        <label class="form-label" for="form1">Enter SkinThickness</label>
+                        <input type="number" id="skinthickness" class="form-control" name="skinthickness"/>
+                      </div>
+                      <div class="form-outline">
+                        <label required class="form-label" for="form1">Enter Insulin Level</label>
+                        <input type="number" id="insulin" class="form-control" name="insulin"/>
+                      </div>
+                      <div class="form-outline">
+                        <label required class="form-label" for="form1">Enter your BMI</label>
+                        <input type="number" id="bmi" class="form-control" name="bmi"/>
+                      </div>
+                      
+                    </div>
+                    <div class="col-12 button-center">
+                      <button type="submit" class="btn btn-primary">Check Diabetes</button>
+                    </div>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section> 
+</body>
+</html>
